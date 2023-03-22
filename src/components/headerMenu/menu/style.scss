@@ -1,0 +1,16 @@
+.menu{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 500;
+    font-size: 0.9rem;
+    line-height: 2.9;
+    color: #000;
+    margin-bottom: 144px;
+    
+    
+
+    & .item-active{
+        color: #512F8B;
+    }
+}

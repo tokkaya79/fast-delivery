@@ -1,0 +1,49 @@
+.header-tabs{
+    padding: 37px 35px 5px 26px;
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__login{
+        margin-bottom: 63px;
+        text-align: end;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    &__tabs{
+        text-align: center;
+        padding-right: 92px;
+        & h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        line-height: 1.5;
+        font-weight: 600;
+        }
+    }
+    &__track {
+        display: flex;
+        justify-content: end;
+        & span {
+            width: 132px;
+            height: 40px;
+            border-bottom: 1px solid #FFAE00;
+        }
+        & img {
+            margin: 0 24px;
+        }
+        &-text--box {
+            display: block;
+            width: 132px;
+            height: 40px;
+            border-bottom: 1px solid #FFAE00;
+            & p {
+               font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                line-height: 1.5;
+                font-weight: 400; 
+            }
+        }
+    }
+}
