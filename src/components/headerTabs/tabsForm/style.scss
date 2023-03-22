@@ -1,0 +1,18 @@
+.tabs-form{
+    max-width: 328px;
+    &__btn-box{
+        display: flex;
+        justify-content: space-between;
+       
+        border-bottom: 1px solid #E8E8E8;
+        margin-bottom: 19px;
+    }
+    &__btn{
+        line-height: 1.2;
+        padding: 10px;
+    }
+    &__btn.active{
+        color: #4832DC;
+        border-bottom: 2px solid #4832DC;
+    }
+}

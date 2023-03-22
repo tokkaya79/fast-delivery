@@ -5,6 +5,7 @@ import SliderItem from './sliderItem/SliderItem';
 
 import arrowNext from '../../assets/icons/arrowNext.svg';
 import arrowPrev from '../../assets/icons/arrowPrev.svg';
+import yellowBlock from '../../assets/icons/yellowBlock.svg';
 
 import './style.scss';
 
@@ -39,6 +40,7 @@ const HeaderSlider: React.FC<HeaderSliderProps> = ({slides}) => {
                     />
                 ))}
             </div>
+            <span className="header-slider__span"><img src={yellowBlock} alt="yellowBlock" /></span>
             <div className="header-slider__btns">
                 <button
                     className="header-slider__btn-prev"
