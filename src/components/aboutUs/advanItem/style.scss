@@ -1,0 +1,28 @@
+.advan-item{
+    max-width: 214px;
+    position: relative;
+    &__icon{
+        margin-bottom: 13px;
+    }
+    &__subtitle{
+        margin-bottom: 10px;
+      text-transform: uppercase; 
+      font-size: 16px; 
+      font-weight: 500;
+      left: 1.5;
+      color: #000;
+    }
+    &__text{
+        font-size: 14px; 
+      font-weight: 400;
+      left: 1.5;
+      color: #AAAAAA;
+
+    }
+    &__arrow{
+        position: absolute;
+        top: 23px;
+        right: 30px;
+    }
+
+}

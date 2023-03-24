@@ -4,6 +4,7 @@ import courier from '../../../assets/icons/courier.svg';
 import parcel from '../../../assets/icons/parcel.svg';
 
 import './style.scss';
+
 interface TabItemProps {
     isActive: boolean;
 }

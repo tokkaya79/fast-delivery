@@ -11,3 +11,23 @@ body{
     margin: 0 auto;
     background-color: #fff;
 }
+.title{
+    font-weight: 600;
+    font-style: normal;
+    color: #000;
+    line-height: 1.5;
+    & span {
+        color: #4832DC
+    }
+    &::before{
+        content: '';
+    }
+}
+
+.subtitle{
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    line-height: 1.5;
+
+}
