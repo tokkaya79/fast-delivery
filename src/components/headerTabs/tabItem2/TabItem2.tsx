@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 
 import courier from '../../../assets/icons/courier.svg';
-import parcel from '../../../assets/icons/parcel.svg';
+
 
 import './style.scss';
 
@@ -20,11 +20,7 @@ const TabItem2 = (props: TabItem2Props) => {
         forceUpdate();
     }
 
-    function handleBtnClickRight() {
-        activeBtnRightRef.current = !activeBtnRightRef.current;
-        activeBtnLeftRef.current = !activeBtnRightRef.current;
-        forceUpdate();
-    }
+   
 
     const [, setTick] = useState(0);
     const forceUpdate = () => {
@@ -46,32 +42,11 @@ const TabItem2 = (props: TabItem2Props) => {
                     />
                     <p className="tab-item__name">Courier</p>
                 </button>
-                <button
-                    className={`tab-item2__box-right btn ${
-                        activeBtnRightRef.current ? 'active' : ''
-                    }`}
-                    onClick={handleBtnClickRight}
-                >
-                    <img
-                        src={parcel}
-                        alt="img-parcel"
-                    />
-                    <p className="tab-item__name">Parcel</p>
-                </button>
+                
             </div>
             <form className="tab-item__form">
-                <p className="tab-item__your-pin">Your Pincode</p>
-                <input
-                    className="tab-item__input"
-                    type="text"
-                    placeholder="Enter your pincode here"
-                />
-                <button
-                    className="tab-item__btn-submit"
-                    type="submit"
-                >
-                    Get a Quote Now
-                </button>
+                <p className="tab-item__your-pin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quam, provident debitis delectus unde numquam! Eos, accusantium asperiores? Repellat expedita maiores ea. Harum iusto praesentium voluptates! Totam fugiat dicta quibusdam!</p>
+               
             </form>
         </div>
     );

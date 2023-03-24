@@ -1,73 +1,8 @@
 .tab-item3 {
-    &__boxes {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 9px;
-    }
-     &.hidden{
-            display: none;
-        }
-    &__box-left,
-    &__box-right {
-        display: flex;
-        width: 155px;
-        height: 73px;
-        background-color: #ececf1;
-        padding: 17px 21px;
-        border-radius: 10px;
-        vertical-align: middle;
-        transition: all 0.2s ease;
-        &:active{
-            transform: scale(0.9);
-        }
-        &.active {
-            background-color: #af128d;
-            border: 1px solid #88117c;
-            & p {
-            color: #ffff;
-            }
-        }
-       
-
-        & img {
-            margin-right: 15px;
-        }
-        & p {
-            font-size: 15px;
-            line-height: 1.2;
-            font-weight: 400;
-            color: #171717;
-            padding-top: 12px;
-        }
-    }
-
-    &__your-pin {
-        margin-bottom: 11px;
+    &__content {
         text-align: start;
-        font-size: 15px;
-        line-height: 1.2;
-        font-weight: 400;
     }
-    &__input {
-        width: 100%;
-        margin-bottom: 9px;
-        padding: 13px 15px;
-        border-radius: 10px;
-        background-color: #f3f3f3;
-        font-size: 16px;
-        line-height: 1.2;
-        font-weight: 400;
-        &::placeholder {
-            color: #ababab;
-            font-size: 13px;
-            line-height: 1.2;
-            font-weight: 400;
-        }
-    }
-    &__btn-submit {
-        color: #4832dc;
-        font-size: 16px;
-        line-height: 1.2;
-        font-weight: 500;
+    &.hidden {
+        display: none;
     }
 }

@@ -13,6 +13,7 @@
         width: 155px;
         height: 73px;
         background-color: #ececf1;
+        box-shadow: -5px 9px 8px rgba(0, 0, 0, 0.188235);
         padding: 17px 21px;
         border-radius: 10px;
         vertical-align: middle;
@@ -22,7 +23,7 @@
         }
         &.active {
             background-color: #12d258;
-            border: 1px solid #2b9218;
+            border: 1px solid #3ac322;
             & p {
             color: #ffff;
             }
