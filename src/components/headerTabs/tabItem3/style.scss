@@ -1,10 +1,10 @@
-.tab-item {
+.tab-item3 {
     &__boxes {
         display: flex;
         justify-content: space-between;
         margin-bottom: 9px;
     }
-      &.hidden{
+     &.hidden{
             display: none;
         }
     &__box-left,
@@ -16,13 +16,13 @@
         padding: 17px 21px;
         border-radius: 10px;
         vertical-align: middle;
-        transition: all .5s ease;
+        transition: all 0.2s ease;
         &:active{
             transform: scale(0.9);
         }
         &.active {
-            background-color: #4832dc;
-            border: 1px solid #4832dc;
+            background-color: #af128d;
+            border: 1px solid #88117c;
             & p {
             color: #ffff;
             }

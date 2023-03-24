@@ -4,37 +4,38 @@ import courier from '../../../assets/icons/courier.svg';
 import parcel from '../../../assets/icons/parcel.svg';
 
 import './style.scss';
-interface TabItemProps {
-    isActive: boolean;
+
+interface TabItem3Props{
+    isActive: boolean
 }
-const TabItem = (props: TabItemProps) => {
-    const { isActive } = props;
 
-    const activeBtnLeftRef = useRef(true);
-    const activeBtnRightRef = useRef(false);
+const TabItem3 = (props: TabItem3Props) => {
+const {isActive} = props
+const activeBtnLeftRef = useRef(true);
+const activeBtnRightRef = useRef(false);
 
-    function handleBtnClickLeft() {
-        activeBtnLeftRef.current = !activeBtnLeftRef.current;
-        activeBtnRightRef.current = !activeBtnLeftRef.current;
-        forceUpdate();
-    }
+function handleBtnClickLeft() {
+    activeBtnLeftRef.current = !activeBtnLeftRef.current;
+    activeBtnRightRef.current = !activeBtnLeftRef.current;
+    forceUpdate();
+}
 
-    function handleBtnClickRight() {
-        activeBtnRightRef.current = !activeBtnRightRef.current;
-        activeBtnLeftRef.current = !activeBtnRightRef.current;
-        forceUpdate();
-    }
+function handleBtnClickRight() {
+    activeBtnRightRef.current = !activeBtnRightRef.current;
+    activeBtnLeftRef.current = !activeBtnRightRef.current;
+    forceUpdate();
+}
 
-    const [, setTick] = useState(0);
-    const forceUpdate = () => {
-        setTick((tick) => tick + 1);
-    };
+ const [, setTick] = useState(0);
+  const forceUpdate = () => {
+    setTick((tick) => tick + 1);
+  };
 
     return (
-        <div className={`tab-item ${isActive ? '' : 'hidden'}`}>
+        <div className={`tab-item3 ${isActive ? '' : 'hidden'}`}>
             <div className="tab-item__boxes">
                 <button
-                    className={`tab-item__box-left btn ${
+                    className={`tab-item3__box-left btn ${
                         activeBtnLeftRef.current ? 'active' : ''
                     }`}
                     onClick={handleBtnClickLeft}
@@ -46,7 +47,7 @@ const TabItem = (props: TabItemProps) => {
                     <p className="tab-item__name">Courier</p>
                 </button>
                 <button
-                    className={`tab-item__box-right btn ${
+                    className={`tab-item3__box-right btn ${
                         activeBtnRightRef.current ? 'active' : ''
                     }`}
                     onClick={handleBtnClickRight}
@@ -76,4 +77,4 @@ const TabItem = (props: TabItemProps) => {
     );
 };
 
-export default TabItem;
+export default TabItem3;

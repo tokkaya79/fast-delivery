@@ -4,12 +4,13 @@ import courier from '../../../assets/icons/courier.svg';
 import parcel from '../../../assets/icons/parcel.svg';
 
 import './style.scss';
-interface TabItemProps {
+
+interface TabItem2Props {
     isActive: boolean;
 }
-const TabItem = (props: TabItemProps) => {
-    const { isActive } = props;
 
+const TabItem2 = (props: TabItem2Props) => {
+    const { isActive } = props;
     const activeBtnLeftRef = useRef(true);
     const activeBtnRightRef = useRef(false);
 
@@ -31,10 +32,10 @@ const TabItem = (props: TabItemProps) => {
     };
 
     return (
-        <div className={`tab-item ${isActive ? '' : 'hidden'}`}>
+        <div className={`tab-item2 ${isActive ? '' : 'hidden'}`}>
             <div className="tab-item__boxes">
                 <button
-                    className={`tab-item__box-left btn ${
+                    className={`tab-item2__box-left btn ${
                         activeBtnLeftRef.current ? 'active' : ''
                     }`}
                     onClick={handleBtnClickLeft}
@@ -46,7 +47,7 @@ const TabItem = (props: TabItemProps) => {
                     <p className="tab-item__name">Courier</p>
                 </button>
                 <button
-                    className={`tab-item__box-right btn ${
+                    className={`tab-item2__box-right btn ${
                         activeBtnRightRef.current ? 'active' : ''
                     }`}
                     onClick={handleBtnClickRight}
@@ -76,4 +77,4 @@ const TabItem = (props: TabItemProps) => {
     );
 };
 
-export default TabItem;
+export default TabItem2;
