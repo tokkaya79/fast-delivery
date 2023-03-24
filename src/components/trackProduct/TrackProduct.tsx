@@ -2,7 +2,7 @@ import './style.scss'
 
 const TrackProduct = () => {
     return (
-        <div className='track-product'>
+        <section className='track-product'>
             <form className="track-product__form">
                 <h3 className="track-product__title">
                     TRACK YOUR PRODUCT
@@ -11,7 +11,7 @@ const TrackProduct = () => {
                 <button className='track-product__btn'>Track</button>
                 <p className="track-product__text">Now you can track your Order easily</p>
             </form>
-        </div>
+        </section>
     )
 }
 

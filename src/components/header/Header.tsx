@@ -8,11 +8,11 @@ import HeaderTabs from '../headerTabs/HeaderTabs';
 
 const Header: React.FC = () => {
     return (
-        <div className="header">
+        <section className="header">
             <HeaderMenu />
             <HeaderSlider slides={slides} />
             <HeaderTabs />
-        </div>
+        </section>
     );
 };
 

@@ -13,7 +13,7 @@ interface AboutUsProps {
 
 const AboutUs: React.FC<AboutUsProps> = ({advans}) => {
     return (
-        <div className='about-us'>
+        <section className='about-us'>
             <h1 className="about-us__title title"><span>ABOUT</span> US</h1>
             <h3 className="about-us__subtitle subtitle">Lorem Ipsum is simply dummy text</h3>
             <div className="about-us__wrapper">
@@ -41,7 +41,7 @@ const AboutUs: React.FC<AboutUsProps> = ({advans}) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
