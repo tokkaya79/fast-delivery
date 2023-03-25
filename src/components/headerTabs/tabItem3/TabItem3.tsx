@@ -1,6 +1,4 @@
 
-import './style.scss';
-
 interface TabItem3Props{
     isActive: boolean
 }

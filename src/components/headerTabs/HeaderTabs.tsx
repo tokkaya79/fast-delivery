@@ -3,7 +3,6 @@ import TabsForm from './tabsForm/TabsForm';
 import track from '../../assets/icons/track.jpg';
 import moveDown from '../../assets/icons/moveDown.svg';
 
-import './style.scss';
 
 const HeaderTabs = () => {
 

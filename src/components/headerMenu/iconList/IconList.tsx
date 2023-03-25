@@ -2,7 +2,6 @@ import facebook from '../../../assets/icons/facebook.jpg';
 import googl from '../../../assets/icons/googl.jpg';
 import twiter from '../../../assets/icons/twiter.jpg';
 
-import './style.scss';
 
 
 const IconList = () => {

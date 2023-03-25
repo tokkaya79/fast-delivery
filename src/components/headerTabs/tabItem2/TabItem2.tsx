@@ -3,8 +3,6 @@ import { useState, useRef } from 'react';
 import courier from '../../../assets/icons/courier.svg';
 
 
-import './style.scss';
-
 interface TabItem2Props {
     isActive: boolean;
 }

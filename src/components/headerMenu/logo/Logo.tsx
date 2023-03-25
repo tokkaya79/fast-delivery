@@ -1,6 +1,6 @@
 import logo from '../../../assets/icons/logo.svg';
 
-import './style.scss';
+
 
 const Logo = () => {
     return (

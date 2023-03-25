@@ -7,7 +7,6 @@ import arrowNext from '../../assets/icons/arrowNext.svg';
 import arrowPrev from '../../assets/icons/arrowPrev.svg';
 import yellowBlock from '../../assets/icons/yellowBlock.svg';
 
-import './style.scss';
 
 interface HeaderSliderProps{
 

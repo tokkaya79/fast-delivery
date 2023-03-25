@@ -1,6 +1,5 @@
 import { ISlide } from '../dataSlider/type';
 
-import './style.scss';
 
 interface SliderItemProps {
     slide: ISlide,

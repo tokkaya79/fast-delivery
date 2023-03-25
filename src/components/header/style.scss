@@ -1,4 +1,333 @@
 .header {
     display: flex;
-    
+}
+//----------header-menu--------------
+.header-menu {
+    padding: 37px 34px;
+}
+
+.icon-list {
+    &__list {
+        display: flex;
+    }
+}
+.logo {
+    margin-bottom: 119.5px;
+}
+.menu {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 500;
+    font-size: 0.9rem;
+    line-height: 2.9;
+    color: #000;
+    margin-bottom: 144px;
+
+    & .item-active {
+        color: #512f8b;
+    }
+}
+//----------header-slider---------------
+
+.header-slider {
+    position: relative;
+    width: 581px;
+    height: 624px;
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 469px;
+        height: 624px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    &__span {
+        position: absolute;
+        bottom: 34px;
+        right: -25px;
+        &::before {
+            content: 'Fast & Safe Delivery';
+            position: absolute;
+            color: #ffff;
+            right: 20%;
+            bottom: 25%;
+            font-size: 21px;
+            font-weight: 500;
+        }
+    }
+
+    &__btns {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    button {
+        margin: 0 10px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover img svg path {
+            fill: red;
+        }
+    }
+}
+.slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &.active {
+        opacity: 1;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+//-----------------header-tabs-------------------
+.header-tabs {
+    padding: 37px 35px 50px 26px;
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__login {
+        margin-bottom: 63px;
+        text-align: end;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    &__tabs {
+        height: 425px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 92px;
+        text-align: center;
+    }
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    &__move-down {
+        text-align: end;
+    }
+
+    &__track {
+        display: flex;
+        justify-content: flex-end;
+        & span {
+            width: 132px;
+            height: 40px;
+            border-bottom: 1px solid #ffae00;
+        }
+        & img {
+            margin: 0 24px;
+        }
+        &-text--box {
+            display: block;
+            width: 132px;
+            height: 40px;
+            border-bottom: 1px solid #ffae00;
+            & p {
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                line-height: 1.5;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.tabs-form {
+    max-width: 328px;
+    &__btn-box {
+        display: flex;
+        justify-content: space-between;
+
+        border-bottom: 1px solid #e8e8e8;
+        margin-bottom: 19px;
+    }
+    &__btn {
+        line-height: 1.2;
+        padding: 10px;
+    }
+    &__btn.active {
+        color: #4832dc;
+        border-bottom: 2px solid #4832dc;
+    }
+}
+.tab-item {
+    &__boxes {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9px;
+    }
+    &.hidden {
+        display: none;
+    }
+    &__box-left,
+    &__box-right {
+        display: flex;
+        width: 155px;
+        height: 73px;
+        background-color: #ececf1;
+        box-shadow: -5px 9px 8px rgba(0, 0, 0, 0.188235);
+        padding: 17px 21px;
+        border-radius: 10px;
+        vertical-align: middle;
+        transition: all 0.5s ease;
+        &:active {
+            transform: scale(0.9);
+        }
+        &.active {
+            background-color: #4832dc;
+            border: 1px solid #4832dc;
+            & p {
+                color: #ffff;
+            }
+        }
+
+        & img {
+            margin-right: 15px;
+        }
+        & p {
+            font-size: 15px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #171717;
+            padding-top: 12px;
+        }
+    }
+
+    &__your-pin {
+        margin-bottom: 11px;
+        text-align: start;
+        font-size: 15px;
+        line-height: 1.2;
+        font-weight: 400;
+    }
+    &__input {
+        width: 100%;
+        margin-bottom: 9px;
+        padding: 13px 15px;
+        border-radius: 10px;
+        background-color: #f3f3f3;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        &::placeholder {
+            color: #ababab;
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 400;
+        }
+    }
+    &__btn-submit {
+        color: #4832dc;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+}
+.tab-item2 {
+    &__boxes {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9px;
+    }
+    &.hidden {
+        display: none;
+    }
+    &__box-left,
+    &__box-right {
+        display: flex;
+        width: 155px;
+        height: 73px;
+        background-color: #ececf1;
+        box-shadow: -5px 9px 8px rgba(0, 0, 0, 0.188235);
+        padding: 17px 21px;
+        border-radius: 10px;
+        vertical-align: middle;
+        transition: all 0.2s ease;
+        &:active {
+            transform: scale(0.9);
+        }
+        &.active {
+            background-color: #12d258;
+            border: 1px solid #3ac322;
+            & p {
+                color: #ffff;
+            }
+        }
+
+        & img {
+            margin-right: 15px;
+        }
+        & p {
+            font-size: 15px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #171717;
+            padding-top: 12px;
+        }
+    }
+
+    &__your-pin {
+        margin-bottom: 11px;
+        text-align: start;
+        font-size: 15px;
+        line-height: 1.2;
+        font-weight: 400;
+    }
+    &__input {
+        width: 100%;
+        margin-bottom: 9px;
+        padding: 13px 15px;
+        border-radius: 10px;
+        background-color: #f3f3f3;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        &::placeholder {
+            color: #ababab;
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 400;
+        }
+    }
+    &__btn-submit {
+        color: #4832dc;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+}
+.tab-item3 {
+    &__content {
+        text-align: start;
+    }
+    &.hidden {
+        display: none;
+    }
 }

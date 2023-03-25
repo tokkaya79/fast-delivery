@@ -2,7 +2,6 @@ import { IAdvan } from './type';
 
 import arrowDown from '../../../assets/icons/arrowDown.svg'
 
-import './style.scss';
 
 interface AdvanItemProps {
     advan: IAdvan

@@ -1,4 +1,3 @@
-import './style.scss';
 import { IService } from './type';
 
 interface ServiceItemProps {

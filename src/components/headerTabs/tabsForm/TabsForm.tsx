@@ -4,7 +4,6 @@ import TabItem from '../tabItem/TabItem';
 import TabItem2 from '../tabItem2/TabItem2';
 import TabItem3 from '../tabItem3/TabItem3';
 
-import './style.scss';
 
 const TabsForm = () => {
 

@@ -2,7 +2,6 @@ import IconList from './iconList/IconList';
 import Logo from './logo/Logo';
 import Menu from './menu/Menu';
 
-import './style.scss';
 
 const HeaderMenu = () => {
     return (
