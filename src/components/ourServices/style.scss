@@ -1,0 +1,29 @@
+.our-services{
+    margin-top: 157px;
+    margin-bottom: 150px;
+
+    &__title, &__subtitle, &__text{
+        text-align: center;
+    }
+    &__title{
+        font-size: 40px;
+    }
+    &__subtitle{
+        font-size: 20px;
+        margin-bottom: 33px;
+    }
+    &__text{
+        padding: 0 167px;
+        margin-bottom: 46px;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #858585;
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 47px;
+        margin: 0 92px;
+
+    }
+}

@@ -1,10 +1,10 @@
 import HeaderMenu from '../headerMenu/HeaderMenu';
 import HeaderSlider from '../headerSlider/HeaderSlider';
+import HeaderTabs from '../headerTabs/HeaderTabs';
+
 import { slides } from '../headerSlider/dataSlider/slides';
 
-
 import './style.scss';
-import HeaderTabs from '../headerTabs/HeaderTabs';
 
 const Header: React.FC = () => {
     return (
