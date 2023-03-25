@@ -1,8 +1,8 @@
-.our-services{
+.our-services {
     margin-top: 157px;
     margin-bottom: 150px;
     position: relative;
-     &::before {
+    &::before {
         content: 'Our Services';
         position: absolute;
         font-size: 90px;
@@ -13,28 +13,29 @@
         left: 29%;
     }
 
-    &__title, &__subtitle, &__text{
+    &__title,
+    &__subtitle,
+    &__text {
         text-align: center;
     }
-    &__title{
+    &__title {
         font-size: 40px;
     }
-    &__subtitle{
+    &__subtitle {
         font-size: 20px;
         margin-bottom: 33px;
     }
-    &__text{
+    &__text {
         padding: 0 167px;
         margin-bottom: 46px;
         font-size: 15px;
         line-height: 1.5;
         color: #858585;
     }
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-wrap: wrap;
         gap: 47px;
         margin: 0 92px;
-
     }
 }

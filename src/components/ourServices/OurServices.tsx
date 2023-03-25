@@ -4,10 +4,10 @@ import { IService } from './serviceItem/type';
 import './style.scss';
 
 interface OurServicesProps {
-    services: IService[]
+    services: IService[];
 }
 
-const OurServices: React.FC<OurServicesProps> = ({services}) => {
+const OurServices: React.FC<OurServicesProps> = ({ services }) => {
     return (
         <section className="our-services">
             <h2 className="our-services__title title">
@@ -25,9 +25,12 @@ const OurServices: React.FC<OurServicesProps> = ({services}) => {
             </p>
             <div className="our-services__wrapper">
                 {services.map((service) => (
-                    <ServiceItem key={service.id} service={service} backgroundColor={service.bgColor}/>
+                    <ServiceItem
+                        key={service.id}
+                        service={service}
+                        backgroundColor={service.bgColor}
+                    />
                 ))}
-                
             </div>
         </section>
     );
