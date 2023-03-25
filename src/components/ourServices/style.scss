@@ -1,6 +1,17 @@
 .our-services{
     margin-top: 157px;
     margin-bottom: 150px;
+    position: relative;
+     &::before {
+        content: 'Our Services';
+        position: absolute;
+        font-size: 90px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #0000001b;
+        top: -70px;
+        left: 29%;
+    }
 
     &__title, &__subtitle, &__text{
         text-align: center;
