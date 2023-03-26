@@ -10,6 +10,17 @@ interface GalleryProps {
 }
 
 const Gallery: React.FC<GalleryProps> = ({ images }) => {
+    const handleImgClick = (url: string) => {
+        const modal = document.createElement('div');
+        modal.classList.add('modal');
+        modal.innerHTML = `<div className="modal__content">
+        <img src='${url}' alt='modalFoto'></img></div>`;
+        document.body.appendChild(modal);
+        modal.addEventListener('click', () => {
+            modal.remove();
+        });
+    };
+
     return (
         <section className="gallery">
             <div className="gallery__wrapper">
@@ -26,6 +37,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
                                 key={index}
                                 src={img.url}
                                 alt={img.ilt}
+                                onClick={() => handleImgClick(img.url)}
                             />
                         </div>
                     ))}
