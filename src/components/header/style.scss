@@ -11,9 +11,6 @@
         display: flex;
     }
 }
-.logo {
-    margin-bottom: 119.5px;
-}
 .menu {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
@@ -22,6 +19,7 @@
     font-size: 0.9rem;
     line-height: 2.9;
     color: #000;
+    margin-top: 119.5px;
     margin-bottom: 144px;
 
     & .item-active {

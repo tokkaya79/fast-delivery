@@ -4,6 +4,7 @@ import TrackProduct from '../../components/trackProduct/TrackProduct';
 import OurServices from '../../components/ourServices/OurServices';
 import HowItWorks from '../../components/howItWorks/HowItWorks';
 import Gallery from '../../components/gallery/Gallery';
+import Footer from '../../components/footer/Footer';
 
 import { advans } from '../../components/aboutUs/advanItem/dateAdvan';
 import { services } from '../../components/ourServices/serviceItem/dateServices';
@@ -19,6 +20,7 @@ const Home = () => {
             <OurServices services={services} />
             <HowItWorks items={items} />
             <Gallery images={images}/>
+            <Footer/>
         </>
     );
 };
