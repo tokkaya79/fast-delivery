@@ -18,7 +18,7 @@ const HeaderTabs = () => {
                     <TabsForm />
                 <div className="header-tabs__content"></div>
             </div>
-            <div className="header-tabs__move-down"><a href="/"><img src={moveDown} alt="moveDown"/></a></div>
+            <div className="header-tabs__move-down"><a href="#track-product"><img src={moveDown} alt="moveDown"/></a></div>
             <div className="header-tabs__track">
                 <span></span>
                 <img className="header-tabs__track-img" src={track} alt="track" />

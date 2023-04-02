@@ -1,15 +1,15 @@
-
+import { NavLink } from "react-router-dom";
 
 const Menu = () => {
     return (
         <div className="menu">
             <ul className="menu__list">
-                <li className="menu__item item-active"><a href="/" className="menu__link">home</a></li>
-                <li className="menu__item"><a href="/" className="menu__link">About</a></li>
-                <li className="menu__item"><a href="/" className="menu__link">Tracking</a></li>
-                <li className="menu__item"><a href="/" className="menu__link">Pricing</a></li>
-                <li className="menu__item"><a href="/" className="menu__link">Contact</a></li>
-                <li className="menu__item"><a href="/" className="menu__link">Help</a></li>
+                <li className="menu__item item-active"><NavLink to="/fast-delivery/" className="menu__link">home</NavLink></li>
+                <li className="menu__item"><NavLink to="/fast-delivery/about" className="menu__link">About</NavLink></li>
+                <li className="menu__item"><NavLink to="/fast-delivery/tracking" className="menu__link">Tracking</NavLink></li>
+                <li className="menu__item"><NavLink to="/fast-delivery/services" className="menu__link">Services</NavLink></li>
+                <li className="menu__item"><NavLink to="/fast-delivery/gallery" className="menu__link">Gallery</NavLink></li>
+                <li className="menu__item"><NavLink to="/fast-delivery/help" className="menu__link">Help</NavLink></li>
             </ul>
         </div>
     )

@@ -9,9 +9,13 @@ import './style.scss';
 const Header: React.FC = () => {
     return (
         <section className="header">
-            <HeaderMenu />
-            <HeaderSlider slides={slides} />
-            <HeaderTabs />
+            <div className="container">
+                <div className="header-inner">
+                    <HeaderMenu />
+                    <HeaderSlider slides={slides} />
+                    <HeaderTabs />
+                </div>
+            </div>
         </section>
     );
 };
