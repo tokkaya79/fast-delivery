@@ -1,9 +1,13 @@
 .header-inner{
     display: flex;
+    column-gap: 35px;
+    row-gap: 35px;
+    padding: 0 35px;
 }
 //----------header-menu--------------
 .header-menu {
-    padding: 37px 34px;
+    max-width: 274px;
+    padding: 37px 0 0 0;
 }
 
 .icon-list {
@@ -30,7 +34,7 @@
 
 .header-slider {
     position: relative;
-    width: 581px;
+    width: 600px;
     height: 624px;
     &__content {
         position: absolute;
@@ -81,6 +85,7 @@
 }
 .slider-item {
     position: absolute;
+    padding-right: 20px;
     top: 0;
     left: 0;
     width: 100%;
@@ -100,11 +105,10 @@
 }
 //-----------------header-tabs-------------------
 .header-tabs {
-    padding: 37px 35px 50px 26px;
+    padding: 37px 0 0 0;
     width: 580px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     &__login {
         margin-bottom: 63px;
         text-align: end;

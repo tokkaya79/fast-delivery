@@ -3,11 +3,22 @@
 
 // font-family: 'Poppins', sans-serif;
 //font-family: 'Passion One', cursive;
+
+html, body, .App, #root{
+    min-height: 100vh;
+}
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #F2F2F2;
     background-color: #fff;
 }
+.App{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    display: block;
+}
+
 
 .container {
     width: 1366px;
@@ -35,9 +46,11 @@ body{
 
 }
 .about-page{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 70px;
-    width: 100%;
+    &__inner{
+        width: 90vw;
+        margin: 0 auto;
+        padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;   
+    }
 }

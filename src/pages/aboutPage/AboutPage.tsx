@@ -5,9 +5,11 @@ import { advans } from '../../components/aboutUs/advanItem/dateAdvan';
 
 const AboutPage = () => {
     return (
-        <main className='about-page'>
-            <HeaderMenu />
-            <AboutUs advans={advans} />
+        <main className="about-page">
+            <div className="about-page__inner">
+                <HeaderMenu />
+                <AboutUs advans={advans} />
+            </div>
         </main>
     );
 };

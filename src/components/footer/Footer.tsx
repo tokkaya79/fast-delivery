@@ -6,11 +6,16 @@ import point from '../../assets/icons/point.svg';
 import phone from '../../assets/icons/phone.svg';
 import payment from '../../assets/icons/payment.jpg';
 
+
 import './style.scss';
 
 const Footer = () => {
+
     return (
-        <section className="footer">
+        <section
+            className="footer"
+            id="footer"
+        >
             <div className="container">
                 <div className="footer__top">
                     <div className="footer__content">

@@ -2,7 +2,7 @@
     &__inner{
     position: relative;
     text-align: center;
-    padding: 30px 82px 106px;
+    padding: 130px 82px 106px;
     &::before {
         content: 'about us';
         position: absolute;
@@ -11,7 +11,7 @@
         font-weight: 600;
         line-height: 1.5;
         color: #0000001b;
-        top: -35px;
+        top: 55px;
         left: 33%;
     }
 }
