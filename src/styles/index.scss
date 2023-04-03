@@ -4,53 +4,54 @@
 // font-family: 'Poppins', sans-serif;
 //font-family: 'Passion One', cursive;
 
-html, body, .App, #root{
+html,
+body,
+.App,
+#root {
     min-height: 100vh;
 }
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
 }
-.App{
+.App {
     display: flex;
     flex-direction: column;
 }
-section{
+section {
     display: block;
 }
-
 
 .container {
     width: 1366px;
     margin: 0 auto;
+}
+.about-page__inner, .tracking-page__inner, 
+.service-page__inner, .gallery-page__inner, .help-page__inner {
+        width: 90vw;
+        margin: 0 auto;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
     
 }
-.title{
+.title {
     font-weight: 600;
     font-style: normal;
     color: #000;
     line-height: 1.5;
     & span {
-        color: #4832DC
+        color: #4832dc;
     }
-    &::before{
+    &::before {
         content: '';
     }
 }
 
-.subtitle{
+.subtitle {
     font-weight: 400;
     font-style: normal;
     color: #000;
     line-height: 1.5;
+}
 
-}
-.about-page{
-    &__inner{
-        width: 90vw;
-        margin: 0 auto;
-        padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 5fr;   
-    }
-}
