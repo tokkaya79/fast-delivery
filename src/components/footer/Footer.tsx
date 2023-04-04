@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import LogoFooter from './logoFooter/LogoFooter';
 import facebook from '../../assets/icons/fb.svg';
 import twiter from '../../assets/icons/twit.svg';
@@ -207,14 +209,14 @@ const Footer = () => {
                         © Copyright 2020, All rights reserved
                     </p>
                     <div className="footer__paymant">
-                        <a
+                        <NavLink
                             className="footer__link--help"
-                            href="/"
+                            to='/fast-delivery/help'
                         >
                             {' '}
                             <span>?</span>
                             <p>Help Center</p>
-                        </a>
+                        </NavLink>
                         <a
                             className="footer__link--payment"
                             href="/"
