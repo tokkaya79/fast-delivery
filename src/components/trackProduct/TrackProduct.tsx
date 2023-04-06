@@ -4,7 +4,7 @@ const TrackProduct = () => {
     return (
         <section
             className="track-product"
-            id="track-product"
+            
         >
             <div className="container">
                 <div className="track-product__inner">

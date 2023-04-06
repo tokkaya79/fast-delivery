@@ -54,7 +54,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ advans }) => {
                                 but also the leap into electronic typesetting,
                                 remaining essentially unchanged.
                             </p>
-                            <div className="about-us__advan-items">
+                            <div className="about-us__advan-items" id="track-product">
                                 {advans.map((advan) => (
                                     <AdvanItem
                                         key={advan.id}

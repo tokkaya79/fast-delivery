@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer__top">
                     <div className="footer__content">
-                        <a href="/">
+                        <a href="#header">
                             <LogoFooter />
                         </a>
                         <p className="text">

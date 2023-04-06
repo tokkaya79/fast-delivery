@@ -38,7 +38,7 @@ const HeaderSlider: React.FC<HeaderSliderProps> = ({slides}) => {
                         
                     />
                 ))}
-            </div>
+            
             <span className="header-slider__span"><img src={yellowBlock} alt="yellowBlock" /></span>
             <div className="header-slider__btns">
                 <button
@@ -53,6 +53,7 @@ const HeaderSlider: React.FC<HeaderSliderProps> = ({slides}) => {
                 >
                     <img src={arrowNext} alt="arrowPrev" />
                 </button>
+            </div>
             </div>
         </div>
     );

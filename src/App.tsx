@@ -45,7 +45,7 @@ function App() {
                         element={<HelpPage />}
                     />
                 </Routes>
-                <Footer />
+                {/* <Footer /> */}
             </Router>
         </div>
     );

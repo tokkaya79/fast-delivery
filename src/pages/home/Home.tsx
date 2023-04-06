@@ -1,5 +1,5 @@
-import AboutUs from '../../components/aboutUs/AboutUs';
 import Header from '../../components/header/Header';
+import AboutUs from '../../components/aboutUs/AboutUs';
 import TrackProduct from '../../components/trackProduct/TrackProduct';
 import OurServices from '../../components/ourServices/OurServices';
 import HowItWorks from '../../components/howItWorks/HowItWorks';
@@ -16,12 +16,12 @@ const Home = () => {
     return (
         <main className='home-page'>
             <Header />
-            <AboutUs advans={advans} />
+            {/* <AboutUs advans={advans} />
             <TrackProduct />
             <OurServices services={services} />
             <HowItWorks items={items} />
             <Gallery images={images}/>
-            <Slider fotos={fotos} />   
+            <Slider fotos={fotos} />    */}
         </main>
     );
 };
