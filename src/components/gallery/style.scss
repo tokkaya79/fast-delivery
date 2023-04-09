@@ -13,8 +13,9 @@
             font-weight: 600;
             line-height: 1.5;
             color: #4932dc15;
-            top: -0;
-            left: 36%;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
     &__title {
@@ -78,4 +79,35 @@
     width: 100%;
     height: auto;
     display: block;
+}
+
+//-------------------screens---------------------
+
+@media (max-width: 1100px){
+    .gallery{
+        &__wrapper{
+            margin: 0;
+        }
+    }
+}
+@media (max-width: 900px){
+    .gallery{
+        &__imgs-block{
+            gap: 20px;
+        }
+    }
+}
+@media (max-width: 600px){
+    .gallery{
+        &__wrapper{
+            &::before{
+                font-size: 54px;
+                top: 5%;
+            }
+           
+        }
+        &__imgs-block{
+            grid-template-columns: 1fr;
+        }
+    }
 }
