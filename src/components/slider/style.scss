@@ -1,6 +1,6 @@
 .slider {
-    margin-top: 150px;
-    margin-bottom: 110px;
+    margin: 150px 0 110px;
+    padding: 0 10px;
     &__wrapper {
         margin: 0 auto;
         position: relative;
@@ -18,16 +18,17 @@
         display: flex;
         justify-content: space-between;
         width: 70%;
-        top: -50px;
-        left: 15%;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     &__inner {
         position: relative;
         &::before {
             content: '"';
             position: absolute;
-            bottom: -35px;
-            right: 40px;
+            bottom: -50%;
+            left: 50%;
             width: 45px;
             height: 45px;
             border-radius: 50%;
@@ -38,6 +39,7 @@
             color: #4832dc;
             opacity: 0;
             z-index: 9;
+            transform: translate(-50%, -50%);
             transition: opacity 0.5s ease-in-out;
         }
         &.active::before {
@@ -81,8 +83,9 @@
     }
     &__btns {
         position: absolute;
-        bottom: -30px;
-        left: 44%;
+        bottom: -20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-color: #fff;
         width: 137px;
         box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25098);
@@ -104,3 +107,81 @@
     background-color: rgb(230, 228, 228);
     color: rgb(100, 98, 98);
 }
+
+//-------------screens------------------------------
+
+@media (max-width: 900px){
+    .slider{
+        &__fotos-block{
+            width: 85%;
+        }
+        &__foto-box{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+@media (max-width: 700px){
+    .slider{
+        margin: 70px 0;
+        
+        &__fotos-block{
+            width: 90%;
+        }
+        &__foto-box{
+            width: 90px;
+            height: 90px;
+        }
+        &__content-block{
+            padding: 0 30px;
+        }
+    }
+}
+@media (max-width: 600px){
+    .slider{
+        &__wrapper{
+            padding-top: 100px;
+            height: 400px;
+        }
+        &__btns{
+            bottom: -15%;
+        }
+       
+    }
+}
+
+@media (max-width: 500px){
+    .slider{
+        &__wrapper{
+            padding-top: 65px;
+            height: 300px;
+        }
+         &__foto-box{
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+@media (max-width: 400px){
+    .slider{
+        &__wrapper{
+            padding-top: 65px;
+            height: 350px;
+        }
+        &__inner{
+            &::before{
+                width: 26px;
+                height: 26px;
+                font-size: 35px;
+            }
+        }
+         &__foto-box{
+            width: 50px;
+            height: 50px;
+        }
+        &__content-block{
+            padding: 0 10px;
+        }
+    }
+}
+
