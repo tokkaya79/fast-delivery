@@ -19,9 +19,9 @@ const Home = () => {
             <AboutUs advans={advans} />
             <TrackProduct />
             <OurServices services={services} />
-            {/*<HowItWorks items={items} />
+            <HowItWorks items={items} />
             <Gallery images={images}/>
-            <Slider fotos={fotos} />    */}
+            {/*<Slider fotos={fotos} />    */}
         </main>
     );
 };

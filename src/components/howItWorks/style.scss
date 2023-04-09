@@ -6,6 +6,9 @@
     &__img-block {
         position: relative;
     }
+    &__img-bg{
+        height: 100%;
+    }
     &__img-up {
         position: absolute;
         left: 40px;
@@ -59,6 +62,37 @@
             line-height: 1.5;
             font-weight: 400;
             color: #f3f3f3;
+        }
+    }
+}
+
+//-----------------screes--------------------------
+@media (max-width: 900px){
+    .how-works{
+        &__inner{
+            margin-top: 60px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__img-up{
+            left: 0;
+        }
+        &__title, &__subtitle{
+            padding: 10px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .how-works{
+        &__items{
+            flex-direction: column;
+            
+        }
+        &__item{
+            width: 100%;
+            max-width: unset;
         }
     }
 }
