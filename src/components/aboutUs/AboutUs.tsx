@@ -16,12 +16,16 @@ const AboutUs: React.FC<AboutUsProps> = ({ advans }) => {
         <section className="about-us">
             <div className="container">
                 <div className="about-us__inner">
+                    <div className="about-us__top">
+                    <span className="about-us__top-span">About Us</span>
                     <h1 className="about-us__title title">
                         <span>ABOUT</span> US
                     </h1>
                     <h3 className="about-us__subtitle subtitle">
                         Lorem Ipsum is simply dummy text
                     </h3>
+
+                    </div>
                     <div className="about-us__wrapper">
                         <div className="about-us__imgs-block">
                             <div className="about-us__img-box about-us__img-box--01">

@@ -26,14 +26,16 @@ section {
     max-width: 1366px;
     margin: 0 auto;
 }
-.about-page__inner, .tracking-page__inner, 
-.service-page__inner, .gallery-page__inner, .help-page__inner {
-        width: 90vw;
-        margin: 0 auto;
-        padding: 5px;
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-    
+.about-page__inner,
+.tracking-page__inner,
+.service-page__inner,
+.gallery-page__inner,
+.help-page__inner {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
 .title {
     font-weight: 600;
@@ -55,3 +57,9 @@ section {
     line-height: 1.5;
 }
 
+//----------screens-------------------
+@media (max-width: 600px) {
+    body.lock {
+        overflow: hidden;
+    }
+}

@@ -3,11 +3,15 @@ import HeaderMenu from '../../components/headerMenu/HeaderMenu';
 
 import { advans } from '../../components/aboutUs/advanItem/dateAdvan';
 
-const AboutPage = () => {
+interface AboutPageProps{
+    isActive: boolean    
+}
+
+const AboutPage:React.FC<AboutPageProps> = ({isActive}) => {
     return (
         <main className="about-page">
             <div className="about-page__inner">
-                <HeaderMenu />
+                <HeaderMenu isActive={isActive}/>
                 <AboutUs advans={advans} />
             </div>
         </main>

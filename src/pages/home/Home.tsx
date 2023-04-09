@@ -14,12 +14,12 @@ import { fotos } from '../../components/slider/fotos';
 
 const Home = () => {
     return (
-        <main className='home-page'>
+        <main className="home-page">
             <Header />
-            {/* <AboutUs advans={advans} />
+            <AboutUs advans={advans} />
             <TrackProduct />
             <OurServices services={services} />
-            <HowItWorks items={items} />
+            {/*<HowItWorks items={items} />
             <Gallery images={images}/>
             <Slider fotos={fotos} />    */}
         </main>

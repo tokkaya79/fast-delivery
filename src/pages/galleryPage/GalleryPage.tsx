@@ -3,11 +3,15 @@ import Gallery from '../../components/gallery/Gallery';
 
 import { images } from '../../components/gallery/images';
 
-const GalleryPage = () => {
+interface GalleryPageProps{
+    isActive: boolean    
+}
+
+const GalleryPage:React.FC<GalleryPageProps> = ({isActive}) => {
     return (
         <main className="gallery-page">
             <div className="gallery-page__inner">
-                <HeaderMenu />
+                <HeaderMenu isActive={isActive}/>
                 <Gallery images={images} />
             </div>
         </main>

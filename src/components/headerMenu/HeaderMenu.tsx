@@ -3,11 +3,15 @@ import Logo from './logo/Logo';
 import Menu from './menu/Menu';
 
 
-const HeaderMenu = () => {
+interface HeaderMenuProps{
+    isActive: boolean    
+}
+
+const HeaderMenu:React.FC<HeaderMenuProps> = ({isActive}) => {
     return (
         <div className="header-menu">
             <Logo />
-            <Menu />
+            <Menu isActive={isActive}/>
             <IconList />
         </div>
     );

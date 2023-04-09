@@ -1,8 +1,14 @@
 import { NavLink } from "react-router-dom";
 
-const Menu = () => {
+interface MenuProps{
+    isActive: boolean
+    
+}
+
+
+const Menu:React.FC<MenuProps> = ({isActive}) => {
     return (
-        <div className="menu">
+        <div className={isActive ? 'menu _active' : 'menu'}>
             <ul className="menu__list">
                 <li className="menu__item item-active"><NavLink to="/fast-delivery/" className="menu__link">home</NavLink></li>
                 <li className="menu__item"><NavLink to="/fast-delivery/about" className="menu__link">About</NavLink></li>

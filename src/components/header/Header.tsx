@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {  useState, useEffect } from 'react';
 
 import BurgerMenu from '../burgerMenu/BurgerMenu';
 import HeaderMenu from '../headerMenu/HeaderMenu';
@@ -9,13 +9,22 @@ import { slides } from '../headerSlider/dataSlider/slides';
 
 import './style.scss';
 
+
+
 const Header: React.FC = () => {
     const [isActive, setIsActive] = useState(false)
 
     const handleClick = () => {
         setIsActive(!isActive)
     }
-
+       useEffect(() => {
+        const screenWidth = window.innerWidth;
+        if (isActive && screenWidth <= 600) {
+            document.body.classList.add('lock');
+        } else {
+            document.body.classList.remove('lock');
+        }
+    }, [isActive]);
 
     return (
         <section
@@ -27,7 +36,7 @@ const Header: React.FC = () => {
                     <BurgerMenu isActive={isActive} handleClick={handleClick}/>
                 </div>
                 <div className="header-inner">
-                    <HeaderMenu />
+                    <HeaderMenu isActive={isActive}/>
                     <HeaderSlider slides={slides} />
                     <HeaderTabs />
                 </div>

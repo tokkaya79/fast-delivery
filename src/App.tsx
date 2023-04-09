@@ -9,12 +9,18 @@ import GalleryPage from './pages/galleryPage/GalleryPage';
 import HelpPage from './pages/helpPage/HelpPage';
 
 
-import Footer from './components/footer/Footer';
+// import Footer from './components/footer/Footer';
 
 
 import './styles/index.scss';
 
-function App() {
+
+interface AppProps{
+    isActive: boolean    
+}
+
+
+const App:React.FC<AppProps> = ({isActive}) => {
 
     return (
         <div className="App">
@@ -26,23 +32,23 @@ function App() {
                     />
                     <Route
                         path="/fast-delivery/about"
-                        element={<AboutPage />}
+                        element={<AboutPage isActive={isActive}/>}
                     />
                      <Route
                         path="/fast-delivery/tracking"
-                        element={<TrackingPage/>}
+                        element={<TrackingPage isActive={isActive}/>}
                     />
                      <Route
                         path="/fast-delivery/services"
-                        element={<ServicePage />}
+                        element={<ServicePage isActive={isActive} />}
                     />
                     <Route
                         path="/fast-delivery/gallery"
-                        element={<GalleryPage />}
+                        element={<GalleryPage isActive={isActive} />}
                     />
                      <Route
                         path="/fast-delivery/help"
-                        element={<HelpPage />}
+                        element={<HelpPage isActive={isActive} />}
                     />
                 </Routes>
                 {/* <Footer /> */}

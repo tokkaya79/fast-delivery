@@ -5,12 +5,15 @@
         &::before {
             content: 'Our Services';
             position: absolute;
+            width: 100%;
+            text-align: center;
             font-size: 90px;
             font-weight: 600;
             line-height: 1.5;
             color: #0000001b;
-            top: -70px;
-            left: 29%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -35,6 +38,7 @@
     }
     &__wrapper {
         display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
         gap: 47px;
         margin: 0 92px;
@@ -68,5 +72,57 @@
         line-height: 1.5;
         margin-bottom: 10px;
         color: #858585;
+    }
+}
+//-------------screens--------------------
+
+@media (max-width: 800px){
+    .our-services{
+        &__text{
+            padding: 0 20px;
+        }
+        &__wrapper{
+            margin: 0 20px;
+            gap: 30px;
+        }
+    }
+    .service-item{
+        width: 40%;
+    }
+}
+@media (max-width: 600px){
+    .our-services{
+        &__inner{
+            &::before{
+                font-size: 60px;
+            }
+        }
+        &__text{
+            padding: 0 10px;
+        }
+        &__wrapper{
+            margin: 0;
+            padding: 10px;
+        }
+    }
+    .service-item{
+        width: 40%;
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px){
+    .our-services{
+        &__inner{
+            &::before{
+                font-size: 38px;
+            }
+        }
+        &__title{
+            font-size: 32px;
+        }
+    }
+    .service-item{
+        width: 100%;
+        flex-direction: row;
     }
 }
