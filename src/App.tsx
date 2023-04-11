@@ -9,7 +9,7 @@ import GalleryPage from './pages/galleryPage/GalleryPage';
 import HelpPage from './pages/helpPage/HelpPage';
 
 
-// import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer';
 
 
 import './styles/index.scss';
@@ -51,7 +51,7 @@ const App:React.FC<AppProps> = ({isActive}) => {
                         element={<HelpPage isActive={isActive} />}
                     />
                 </Routes>
-                {/* <Footer /> */}
+                <Footer />
             </Router>
         </div>
     );

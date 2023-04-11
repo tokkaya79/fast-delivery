@@ -6,27 +6,28 @@
     &__top {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         gap: 80px;
         padding: 45px 93px 36px 101px;
         position: relative;
-    &::before,
-    &::after {
-        content: '';
-        width: 345px;
-        height: 277px;
-        background-image: url('../../assets/images/shape.svg');
-        background-position: center center;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-
-    }
-    &::before {
-        left: 50px;
-    }
-    &::after {
-        right: 110px;
-    }
+        min-height: 277px;
+        &::before,
+        &::after {
+            content: '';
+            width: 345px;
+            height: 277px;
+            background-image: url('../../assets/images/shape.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+        }
+        &::before {
+            left: 50px;
+        }
+        &::after {
+            right: 110px;
+        }
     }
     &__content {
         max-width: 316px;
@@ -62,13 +63,15 @@
         }
     }
     &__bottom {
-        height: 51px;
+        min-height: 51px;
         background-color: #10093b;
-        padding-top: 11px;
+        padding: 11px 5px 11px;
         &-wraper {
             max-width: 1366px;
             margin: 0 auto;
             display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
             justify-content: space-between;
             align-items: center;
         }
@@ -119,5 +122,58 @@
     }
     &__paymant {
         display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+//----------------screens--------------------------
+
+@media (max-width: 1317px) {
+    .footer {
+        &__top {
+            padding: 30px;
+        }
+      
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        &__top {
+            gap: 30px;
+        }
+          &__date{
+            gap: 30px;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 685px) {
+    .footer {
+        &__bottom-wraper {
+            justify-content: center;
+        }
+        &__paymant {
+            width: 100%;
+            justify-content: space-between;
+        }
+        &__copyright-text {
+            order: 1;
+        }
+    }
+}
+@media (max-width: 460px) {
+    .footer {
+        &__top {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+        &__paymant {
+            justify-content: center;
+        }
     }
 }
