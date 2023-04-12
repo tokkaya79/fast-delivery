@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/home/Home';
@@ -8,19 +7,12 @@ import ServicePage from './pages/servicePage/ServicePage';
 import GalleryPage from './pages/galleryPage/GalleryPage';
 import HelpPage from './pages/helpPage/HelpPage';
 
-
 import Footer from './components/footer/Footer';
-
 
 import './styles/index.scss';
 
 
-interface AppProps{
-    isActive: boolean    
-}
-
-
-const App:React.FC<AppProps> = ({isActive}) => {
+const App = () => {
 
     return (
         <div className="App">
@@ -32,23 +24,23 @@ const App:React.FC<AppProps> = ({isActive}) => {
                     />
                     <Route
                         path="/fast-delivery/about"
-                        element={<AboutPage isActive={isActive}/>}
+                        element={<AboutPage/>}
                     />
                      <Route
                         path="/fast-delivery/tracking"
-                        element={<TrackingPage isActive={isActive}/>}
+                        element={<TrackingPage />}
                     />
                      <Route
                         path="/fast-delivery/services"
-                        element={<ServicePage isActive={isActive} />}
+                        element={<ServicePage />}
                     />
                     <Route
                         path="/fast-delivery/gallery"
-                        element={<GalleryPage isActive={isActive} />}
+                        element={<GalleryPage />}
                     />
                      <Route
                         path="/fast-delivery/help"
-                        element={<HelpPage isActive={isActive} />}
+                        element={<HelpPage />}
                     />
                 </Routes>
                 <Footer />

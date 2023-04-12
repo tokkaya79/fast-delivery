@@ -1,17 +1,15 @@
-import HeaderMenu from '../../components/headerMenu/HeaderMenu';
+import Header from '../../components/header/Header';
 import Gallery from '../../components/gallery/Gallery';
 
 import { images } from '../../components/gallery/images';
 
-interface GalleryPageProps{
-    isActive: boolean    
-}
 
-const GalleryPage:React.FC<GalleryPageProps> = ({isActive}) => {
+
+const GalleryPage = () => {
     return (
         <main className="gallery-page">
             <div className="gallery-page__inner">
-                <HeaderMenu isActive={isActive}/>
+                <Header/>
                 <Gallery images={images} />
             </div>
         </main>

@@ -2,6 +2,7 @@ import IconList from './iconList/IconList';
 import Logo from './logo/Logo';
 import Menu from './menu/Menu';
 
+import '../header/style.scss';
 
 interface HeaderMenuProps{
     isActive: boolean    

@@ -17,6 +17,7 @@ body {
 .App {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 section {
     display: block;
@@ -33,7 +34,7 @@ section {
 .help-page__inner {
     width: 90vw;
     margin: 0 auto;
-    padding: 5px;
+    padding: 0 5px;
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
@@ -56,10 +57,38 @@ section {
     color: #000;
     line-height: 1.5;
 }
+.about-page,
+.tracking-page,
+.service-page,
+.gallery-page,
+.help-page {
+    & .header-slider {
+        display: none;
+    }
+    & .header-tabs {
+        display: none;
+    }
+}
 
 //----------screens-------------------
+@media (max-width: 880px) {
+    .about-page,
+    .tracking-page,
+    .service-page,
+    .gallery-page,
+    .help-page {
+        &__inner {
+            display: block;
+        }
+    }
+}
 @media (max-width: 600px) {
     body.lock {
         overflow: hidden;
+    }
+    .help-page{
+        & .help-form{
+            padding: 0;
+        }
     }
 }

@@ -1,17 +1,12 @@
-import HeaderMenu from '../../components/headerMenu/HeaderMenu';
+import Header from '../../components/header/Header';
 import HelpForm from '../../components/helpForm/HelpForm';
 
 
-interface HelpPageProps{
-    isActive: boolean    
-}
-
-
-const HelpPage:React.FC<HelpPageProps> = ({isActive}) => {
+const HelpPage = () => {
     return (
         <main className="help-page">
             <div className="help-page__inner">
-                <HeaderMenu isActive={isActive}/>
+                <Header/>
                 <HelpForm />
             </div>
         </main>

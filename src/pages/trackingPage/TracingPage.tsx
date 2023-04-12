@@ -1,15 +1,11 @@
-import HeaderMenu from '../../components/headerMenu/HeaderMenu';
+import Header from '../../components/header/Header';
 import TrackProduct from '../../components/trackProduct/TrackProduct';
 
-interface TrackingPageProps{
-    isActive: boolean    
-}
-
-const TrackingPage:React.FC<TrackingPageProps> = ({isActive}) => {
+const TrackingPage = () => {
     return (
         <main className="tracking-page">
             <div className="tracking-page__inner">
-                <HeaderMenu isActive={isActive}/>
+                <Header/>
                 <TrackProduct />
             </div>
         </main>

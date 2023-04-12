@@ -2,11 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 70px;
     &__form{
         display: flex;
         flex-direction: column;
         row-gap: 30px;
-        width: 50%;
+        max-width: 585px;
+        width: 100%;
         & input {
             display: block;
             border: 1px solid #ccc;
