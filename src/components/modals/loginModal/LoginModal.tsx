@@ -1,28 +1,23 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Modal, Form, Button } from 'react-bootstrap';
 import isEmail from 'validator/lib/isEmail';
 
 import { FiEye, FiEyeOff } from 'react-icons/fi';
 
-import './style.scss';
+import '../style.scss';
 
-type RegisterModalProps = {
+type LoginModalProps = {
     show: boolean;
     handleClose: () => void;
 };
 
-const RegisterModal = ({ show, handleClose }: RegisterModalProps) => {
+const LoginModal = ({ show, handleClose }: LoginModalProps) => {
     const [showPassword, setShowPassword] = useState(false);
-    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
     const [email, setEmail] = useState('');
-
+ 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
-    };
-
-    const toggleConfirmPasswordVisibility = () => {
-        setShowConfirmPassword(!showConfirmPassword);
     };
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -33,9 +28,7 @@ const RegisterModal = ({ show, handleClose }: RegisterModalProps) => {
         }
         handleClose();
     };
-    const handleRegisterButtonClick: React.MouseEventHandler<
-        HTMLButtonElement
-    > = (event) => {
+    const handleLoginButtonClick: React.MouseEventHandler<HTMLButtonElement> = (event) => {
         handleSubmit(event as any);
     };
 
@@ -46,7 +39,7 @@ const RegisterModal = ({ show, handleClose }: RegisterModalProps) => {
                 onHide={handleClose}
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>Register</Modal.Title>
+                    <Modal.Title>Login</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form
@@ -65,9 +58,6 @@ const RegisterModal = ({ show, handleClose }: RegisterModalProps) => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
-                            <Form.Text className="text-mutid">
-                                We'll never share your email with anyone else.
-                            </Form.Text>
                         </Form.Group>
                         <Form.Group
                             controlId="formBasicPassword"
@@ -88,35 +78,6 @@ const RegisterModal = ({ show, handleClose }: RegisterModalProps) => {
                                 )}
                             </div>
                         </Form.Group>
-                        <Form.Group
-                            controlId="formBasicConfirmPassword"
-                            className="form__group"
-                        >
-                            <Form.Label>Confirm Password</Form.Label>
-                            <div className="password-input">
-                                <Form.Control
-                                    type={
-                                        showConfirmPassword
-                                            ? 'text'
-                                            : 'password'
-                                    }
-                                    placeholder="Confirm Password"
-                                />
-                                {showConfirmPassword ? (
-                                    <FiEye
-                                        onClick={
-                                            toggleConfirmPasswordVisibility
-                                        }
-                                    />
-                                ) : (
-                                    <FiEyeOff
-                                        onClick={
-                                            toggleConfirmPasswordVisibility
-                                        }
-                                    />
-                                )}
-                            </div>
-                        </Form.Group>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer className="form__group">
@@ -128,9 +89,9 @@ const RegisterModal = ({ show, handleClose }: RegisterModalProps) => {
                     </Button>
                     <Button
                         variant="primary"
-                        onClick={handleRegisterButtonClick}
+                        onClick={handleLoginButtonClick}
                     >
-                        Register
+                        Login
                     </Button>
                 </Modal.Footer>
             </Modal>
@@ -138,4 +99,4 @@ const RegisterModal = ({ show, handleClose }: RegisterModalProps) => {
     );
 };
 
-export default RegisterModal;
+export default LoginModal;

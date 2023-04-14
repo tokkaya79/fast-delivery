@@ -4,10 +4,12 @@ import TabsForm from './tabsForm/TabsForm';
 
 import track from '../../assets/icons/track.jpg';
 import moveDown from '../../assets/icons/moveDown.svg';
-import RegisterModal from '../registerModal/RegisterModal';
+import RegisterModal from '../modals/registerModal/RegisterModal';
+import LoginModal from '../modals/loginModal/LoginModal';
 
 const HeaderTabs = () => {
     const [showRegisterModal, setShowRegisterModal] = useState(false);
+    const [showLoginModal, setShowLoginModal] = useState(false);
 
     const handleShowRegisterModal = () => {
         setShowRegisterModal(true);
@@ -15,17 +17,27 @@ const HeaderTabs = () => {
     const handleCloseRegisterModal = () => {
         setShowRegisterModal(false);
     };
+    const handleShowLoginModal = () => {
+        setShowLoginModal(true);
+    };
+    const handleCloseLoginModal = () => {
+        setShowLoginModal(false);
+    };
 
     return (
         <div className="header-tabs">
             <div className="header-tabs__login">
                 <p className="header-tabs__text">
-                    <button onClick={handleShowRegisterModal}>Login</button> /{' '}
+                    <button onClick={handleShowLoginModal}>Login</button> /{' '}
                     <button onClick={handleShowRegisterModal}>Register</button>
                 </p>
                 <RegisterModal
                     show={showRegisterModal}
                     handleClose={handleCloseRegisterModal}
+                />
+                 <LoginModal
+                    show={showLoginModal}
+                    handleClose={handleCloseLoginModal}
                 />
             </div>
             <div className="header-tabs__tabs">
