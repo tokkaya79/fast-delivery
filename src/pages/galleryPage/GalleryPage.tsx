@@ -6,6 +6,8 @@ import { images } from '../../components/gallery/images';
 const GalleryPage = () => {
 
     const imagesToDisplay = images.slice(0, 5);
+  
+
 
     return (
         <main className="gallery-page">

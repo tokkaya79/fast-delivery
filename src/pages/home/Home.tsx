@@ -13,6 +13,7 @@ import { images } from '../../components/gallery/images';
 import { fotos } from '../../components/slider/fotos';
 
 const Home = () => {
+    const imagesToDisplay = images.slice(0, 5);
     return (
         <main className="home-page">
             <Header />
@@ -20,7 +21,7 @@ const Home = () => {
             <TrackProduct />
             <OurServices services={services} />
             <HowItWorks items={items} />
-            <Gallery images={images}/>
+            <Gallery images={imagesToDisplay}/>
             <Slider fotos={fotos} /> 
         </main>
     );

@@ -11,47 +11,48 @@ import HelpPage from './pages/helpPage/HelpPage';
 import Footer from './components/footer/Footer';
 
 import './styles/index.scss';
-
+import ScrollToTop from './ScrollToTop';
 
 const App = () => {
-
     return (
         <div className="App">
             <Router>
-                <Routes>
-                    <Route
-                        path="/fast-delivery"
-                        element={<Home />}
-                    />
-                    <Route
-                        path="/fast-delivery/about"
-                        element={<AboutPage/>}
-                    />
-                     <Route
-                        path="/fast-delivery/tracking"
-                        element={<TrackingPage />}
-                    />
-                     <Route
-                        path="/fast-delivery/services"
-                        element={<ServicePage />}
-                    />
-                    <Route
-                        path="/fast-delivery/gallery"
-                        element={<GalleryPage />}
-                    />
-                    <Route
-                        path="/fast-delivery/all-gallery"
-                        element={<AllGalleryPage />}
-                    />
-                     <Route
-                        path="/fast-delivery/help"
-                        element={<HelpPage />}
-                    />
-                </Routes>
-                <Footer />
+                <ScrollToTop>
+                    <Routes>
+                        <Route
+                            path="/fast-delivery"
+                            element={<Home />}
+                        />
+                        <Route
+                            path="/fast-delivery/about"
+                            element={<AboutPage />}
+                        />
+                        <Route
+                            path="/fast-delivery/tracking"
+                            element={<TrackingPage />}
+                        />
+                        <Route
+                            path="/fast-delivery/services"
+                            element={<ServicePage />}
+                        />
+                        <Route
+                            path="/fast-delivery/gallery"
+                            element={<GalleryPage />}
+                        />
+                        <Route
+                            path="/fast-delivery/all-gallery"
+                            element={<AllGalleryPage />}
+                        />
+                        <Route
+                            path="/fast-delivery/help"
+                            element={<HelpPage />}
+                        />
+                    </Routes>
+                    <Footer />
+                </ScrollToTop>
             </Router>
         </div>
     );
-}
+};
 
 export default App;

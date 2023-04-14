@@ -45,6 +45,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
                             </div>
                         ))}
                     </div>
+                    
                     <NavLink
                         className="gallery__link"
                         to="/fast-delivery/all-gallery"
