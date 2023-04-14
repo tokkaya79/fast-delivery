@@ -10,13 +10,14 @@ import { slides } from '../headerSlider/dataSlider/slides';
 import './style.scss';
 
 
-
 const Header: React.FC = () => {
     const [isActive, setIsActive] = useState(false)
+   
 
     const handleClick = () => {
         setIsActive(!isActive)
     }
+
        useEffect(() => {
         const screenWidth = window.innerWidth;
         if (isActive && screenWidth <= 600) {

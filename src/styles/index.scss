@@ -69,6 +69,11 @@ section {
         display: none;
     }
 }
+ #modal{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
 //----------screens-------------------
 @media (max-width: 880px) {

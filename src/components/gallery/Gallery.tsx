@@ -12,8 +12,8 @@ interface GalleryProps {
 const Gallery: React.FC<GalleryProps> = ({ images }) => {
     const handleImgClick = (url: string) => {
         const modal = document.createElement('div');
-        modal.classList.add('modal');
-        modal.innerHTML = `<div className="modal__content">
+        modal.classList.add('modal-gallery');
+        modal.innerHTML = `<div className="modal-gallery__content">
         <img src='${url}' alt='modalFoto'></img></div>`;
         document.body.appendChild(modal);
         modal.addEventListener('click', () => {

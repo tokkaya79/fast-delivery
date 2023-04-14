@@ -55,7 +55,7 @@
         line-height: 1.5;
     }
 }
-.modal {
+.modal-gallery {
     position: fixed;
     top: 0;
     left: 0;
@@ -68,14 +68,14 @@
     z-index: 999;
 }
 
-.modal__content {
+.modal-gallery__content {
     max-width: 80%;
     max-height: 80%;
     overflow: auto;
     position: relative;
 }
 
-.modal__content img {
+.modal-gallery__content img {
     width: 100%;
     height: auto;
     display: block;
