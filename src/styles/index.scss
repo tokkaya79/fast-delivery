@@ -61,7 +61,8 @@ section {
 .tracking-page,
 .service-page,
 .gallery-page,
-.help-page {
+.help-page,
+.allgallery-page {
     & .header-slider {
         display: none;
     }
@@ -69,11 +70,20 @@ section {
         display: none;
     }
 }
- #modal{
-display: flex;
-justify-content: center;
-align-items: center;
+.allgallery-page {
+    & .gallery__imgs-block{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    & .gallery__img-box {
+        width: 30%;
+        }
+
+    & .gallery__link {
+        display: none;
+    }
 }
+
 
 //----------screens-------------------
 @media (max-width: 880px) {
@@ -81,7 +91,8 @@ align-items: center;
     .tracking-page,
     .service-page,
     .gallery-page,
-    .help-page {
+    .help-page,
+    .allgallery-page {
         &__inner {
             display: block;
         }

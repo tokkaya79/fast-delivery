@@ -26,5 +26,33 @@ const images = [
         url: gallery05,
         ilt: 'fotoGallery05'
     },
+     {
+        url: gallery01,
+        ilt: 'fotoGallery01'
+    },
+     {
+        url: gallery02,
+        ilt: 'fotoGallery02'
+    },
+     {
+        url: gallery03,
+        ilt: 'fotoGallery03'
+    },
+     {
+        url: gallery04,
+        ilt: 'fotoGallery04'
+    },
+     {
+        url: gallery05,
+        ilt: 'fotoGallery05'
+    },
+     {
+        url: gallery04,
+        ilt: 'fotoGallery04'
+    },
+     {
+        url: gallery05,
+        ilt: 'fotoGallery05'
+    }
 ]
 export {images}

@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import './style.scss';
 
 interface Image {
@@ -43,12 +45,12 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
                             </div>
                         ))}
                     </div>
-                    <a
+                    <NavLink
                         className="gallery__link"
-                        href="/"
+                        to="/fast-delivery/all-gallery"
                     >
                         View All Gallery
-                    </a>
+                    </NavLink>
                 </div>
             </div>
         </section>

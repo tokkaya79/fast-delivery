@@ -5,6 +5,7 @@ import AboutPage from './pages/aboutPage/AboutPage';
 import TrackingPage from './pages/trackingPage/TracingPage';
 import ServicePage from './pages/servicePage/ServicePage';
 import GalleryPage from './pages/galleryPage/GalleryPage';
+import AllGalleryPage from './pages/allGalleryPage/AllGalleryPage';
 import HelpPage from './pages/helpPage/HelpPage';
 
 import Footer from './components/footer/Footer';
@@ -37,6 +38,10 @@ const App = () => {
                     <Route
                         path="/fast-delivery/gallery"
                         element={<GalleryPage />}
+                    />
+                    <Route
+                        path="/fast-delivery/all-gallery"
+                        element={<AllGalleryPage />}
                     />
                      <Route
                         path="/fast-delivery/help"
